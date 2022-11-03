@@ -7,7 +7,7 @@ $(document).ready(function() {
 
     askedQuestions = [];
 
-    let randNum = Math.floor((Math.random() * 6)); // for selecting questions from array radnomly
+    let randNum = Math.floor((Math.random() * 7)); // for selecting questions from array radnomly
     
     questions = [
         "Who is smoking more than others?",
@@ -82,10 +82,10 @@ $(document).ready(function() {
             function() 
             {
                 console.log('executed');
-                randNum = Math.floor((Math.random() * 6)); // randomly select an index for questions
+                randNum = Math.floor((Math.random() * 7)); // randomly select an index for questions
                 console.log('asked questions before looping: ' + askedQuestions);
                 while (askedQuestions.includes(randNum)) {
-                    randNum = Math.floor((Math.random() * 6));
+                    randNum = Math.floor((Math.random() * 7));
                 }
                 askedQuestions.push(randNum);
                 console.log('asked questions after looping and pushing: ' + askedQuestions);
@@ -139,7 +139,7 @@ $(document).ready(function() {
             score++;
         }
         questionNo++;
-        randNum = Math.floor((Math.random() * 6));
+        randNum = Math.floor((Math.random() * 7));
         setTimeout(
             function() 
             {
@@ -161,10 +161,10 @@ $(document).ready(function() {
     
                 else {
                     console.log('executed'); // for debugging
-                    randNum = Math.floor((Math.random() * 6)); // randomly select an index for questions
+                    randNum = Math.floor((Math.random() * 7)); // randomly select an index for questions
                     console.log('asked questions before looping: ' + askedQuestions); // for debugging
                     while (askedQuestions.includes(randNum)) {
-                        randNum = Math.floor((Math.random() * 6));
+                        randNum = Math.floor((Math.random() * 7));
                     }
                     askedQuestions.push(randNum);
                     console.log('asked questions after looping and pushing: ' + askedQuestions); // for debugging
@@ -200,7 +200,7 @@ $(document).ready(function() {
             score++;
         }
         questionNo++;
-        randNum = Math.floor((Math.random() * 6));
+        randNum = Math.floor((Math.random() * 7));
         setTimeout(
             function() 
             {
@@ -222,10 +222,10 @@ $(document).ready(function() {
     
                 else {
                     console.log('executed');
-                    randNum = Math.floor((Math.random() * 6)); // randomly select an index for questions
+                    randNum = Math.floor((Math.random() * 7)); // randomly select an index for questions
                     console.log('asked questions before looping: ' + askedQuestions);
                     while (askedQuestions.includes(randNum)) {
-                        randNum = Math.floor((Math.random() * 6));
+                        randNum = Math.floor((Math.random() * 7));
                     }
                     askedQuestions.push(randNum);
                     console.log('asked questions after looping and pushing: ' + askedQuestions);
@@ -261,7 +261,7 @@ $(document).ready(function() {
             score++;
         }
         questionNo++;
-        randNum = Math.floor((Math.random() * 6));
+        randNum = Math.floor((Math.random() * 7));
         setTimeout(
             function() 
             {
@@ -282,10 +282,10 @@ $(document).ready(function() {
     
                 else {
                     console.log('executed');
-                    randNum = Math.floor((Math.random() * 6)); // randomly select an index for questions
+                    randNum = Math.floor((Math.random() * 7)); // randomly select an index for questions
                     console.log('asked questions before looping: ' + askedQuestions);
                     while (askedQuestions.includes(randNum)) {
-                        randNum = Math.floor((Math.random() * 6));
+                        randNum = Math.floor((Math.random() * 7));
                     }
                     askedQuestions.push(randNum);
                     console.log('asked questions after looping and pushing: ' + askedQuestions);
