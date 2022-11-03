@@ -1,0 +1,166 @@
+body {
+    background-color: #E5FFFF;
+}
+
+img {
+    position: relative;
+}
+
+#tab {
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #009688;
+}
+
+
+#question {
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #009688;
+}
+
+#start {
+    width: 150px;
+    height: 30px;
+    border: 1px solid #009688;
+    border-radius: 20px;
+    padding: 5px;
+    color: #009688;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.choice {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 40px;
+    background-color: #fff;
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+#a {
+    top: 50%;
+    transition: all 0.5s;
+}
+
+#b {
+    top: 56%;
+    transition: all 0.5s;
+}
+
+#c {
+    top: 62%;
+    transition: all 0.5s;
+}
+
+#d {
+    top: 68%;
+    transition: all 0.5s;
+}
+
+#a:hover {
+    box-shadow: 1px 0 5px 2px #009688;
+}
+
+#b:hover {
+    box-shadow: 1px 0 5px 2px #009688;
+}
+
+#c:hover {
+    box-shadow: 1px 0 5px 2px #009688;
+}
+
+#d:hover {
+    box-shadow: 1px 0 5px 2px #009688;
+}
+
+.T {
+    width: 50px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #009688;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+.Text {
+    padding: 10px;
+}
+
+#score-text {
+    left: 67%;
+    top: 26%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-family: sans-serif;
+    color: darkgray;
+}
+
+#score-tab {
+    left: 67%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #009688;
+}
+
+#question-tab {
+    width: 140px;
+    height: 30px;
+    border: 2px solid #009688;
+    left: 37%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 30px;
+}
+
+#completed {
+    width: 35px;
+    height: 30px;
+    border: 2px solid #009688;
+    left: 37%;
+    top: 30%;
+    transform: translate(-70px, -50%);
+    position: absolute;
+    border-radius: 30px;
+    background-color: #009688;
+}
+
+#question-text {
+    left: 37%;
+    top: 26%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 30px;
+    color: darkgray;
+    font-family: sans-serif;
+}
