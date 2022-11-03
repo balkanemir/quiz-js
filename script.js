@@ -7,22 +7,27 @@ $(document).ready(function() {
 
     askedQuestions = [];
 
-    let randNum = Math.floor((Math.random() * 5)); // for selecting questions from array radnomly
+    let randNum = Math.floor((Math.random() * 6)); // for selecting questions from array radnomly
     
     questions = [
-        "Which one is NOT a legal variable name?",
-        "What is a correct syntax to output 'Hello World' in Python?",
-        "How do you insert COMMENTS in Python code?",
-        "What is the correct syntax to output the type of variable or object in Python?",
-        "What is the correct file extension for python files?"
+        "Who is smoking more than others?",
+        "What is the REAL name of YK?",
+        "Who have not get drunk so far?",
+        "Which one is correct?",
+        "What is the korean name of Fanny?",
+        "Who eats the pocky chocolate sticks by fives?",
+        "Who loves Noraebang more than others?"
+
         
     ];
     choices = [
-        [["_myvar", false],["Myvar", false],["my_var", false],["my-var", true]],
-        [["print('Hello World')", true],["p('Hello World')", false],["echo('Hello World');", false],["echo 'Hello World'", false]],
-        [["/*This is comment*/", false],["#This is comment", true],["//This is comment", false],["None of above", false]],
-        [["print(typeof(x))", false],["print(typeof x)", false],["print(typeOf(x))", false],["print(type(x))", true]],
-        [[".pt", false],[".pyt", false],[".pyth", false],[".py", true]]
+        [["YK", false],["Giampiero", false],["Justine", false],["Erdni", true]],
+        [["Yong Khan", false],["Yonk Kang", false],["Yong Kang", true],["Yang Kong", false]],
+        [["Emir", false],["Fanny", true],["Jeanne", false],["Giampiero", false]],
+        [["never i have never", false],["ever have i never", false],["never i have ever", false],["never have i ever", true]],
+        [["ㅍ너", false],["퍼교", false],["처피", false],["파니", true]],
+        [["Beatrice", false],["Gauthier", true],["Giampiero", false],["Erdni", false]],
+        [["YK", false],["Jeanne", true],["Emir", false],["Justine", false]],
     ];
 
     questionTabCompletion = ["35px","70px","105px","140px"];
@@ -77,10 +82,10 @@ $(document).ready(function() {
             function() 
             {
                 console.log('executed');
-                randNum = Math.floor((Math.random() * 5)); // randomly select an index for questions
+                randNum = Math.floor((Math.random() * 6)); // randomly select an index for questions
                 console.log('asked questions before looping: ' + askedQuestions);
                 while (askedQuestions.includes(randNum)) {
-                    randNum = Math.floor((Math.random() * 5));
+                    randNum = Math.floor((Math.random() * 6));
                 }
                 askedQuestions.push(randNum);
                 console.log('asked questions after looping and pushing: ' + askedQuestions);
@@ -134,7 +139,7 @@ $(document).ready(function() {
             score++;
         }
         questionNo++;
-        randNum = Math.floor((Math.random() * 5));
+        randNum = Math.floor((Math.random() * 6));
         setTimeout(
             function() 
             {
@@ -156,10 +161,10 @@ $(document).ready(function() {
     
                 else {
                     console.log('executed'); // for debugging
-                    randNum = Math.floor((Math.random() * 5)); // randomly select an index for questions
+                    randNum = Math.floor((Math.random() * 6)); // randomly select an index for questions
                     console.log('asked questions before looping: ' + askedQuestions); // for debugging
                     while (askedQuestions.includes(randNum)) {
-                        randNum = Math.floor((Math.random() * 5));
+                        randNum = Math.floor((Math.random() * 6));
                     }
                     askedQuestions.push(randNum);
                     console.log('asked questions after looping and pushing: ' + askedQuestions); // for debugging
@@ -195,7 +200,7 @@ $(document).ready(function() {
             score++;
         }
         questionNo++;
-        randNum = Math.floor((Math.random() * 5));
+        randNum = Math.floor((Math.random() * 6));
         setTimeout(
             function() 
             {
@@ -217,10 +222,10 @@ $(document).ready(function() {
     
                 else {
                     console.log('executed');
-                    randNum = Math.floor((Math.random() * 5)); // randomly select an index for questions
+                    randNum = Math.floor((Math.random() * 6)); // randomly select an index for questions
                     console.log('asked questions before looping: ' + askedQuestions);
                     while (askedQuestions.includes(randNum)) {
-                        randNum = Math.floor((Math.random() * 5));
+                        randNum = Math.floor((Math.random() * 6));
                     }
                     askedQuestions.push(randNum);
                     console.log('asked questions after looping and pushing: ' + askedQuestions);
@@ -256,7 +261,7 @@ $(document).ready(function() {
             score++;
         }
         questionNo++;
-        randNum = Math.floor((Math.random() * 5));
+        randNum = Math.floor((Math.random() * 6));
         setTimeout(
             function() 
             {
@@ -277,10 +282,10 @@ $(document).ready(function() {
     
                 else {
                     console.log('executed');
-                    randNum = Math.floor((Math.random() * 5)); // randomly select an index for questions
+                    randNum = Math.floor((Math.random() * 6)); // randomly select an index for questions
                     console.log('asked questions before looping: ' + askedQuestions);
                     while (askedQuestions.includes(randNum)) {
-                        randNum = Math.floor((Math.random() * 5));
+                        randNum = Math.floor((Math.random() * 6));
                     }
                     askedQuestions.push(randNum);
                     console.log('asked questions after looping and pushing: ' + askedQuestions);
